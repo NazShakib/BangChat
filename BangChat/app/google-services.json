@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "934426884313",
+    "firebase_url": "https://bang-chat.firebaseio.com",
+    "project_id": "bang-chat",
+    "storage_bucket": "bang-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934426884313:android:250bf28245bb5027",
+        "android_client_info": {
+          "package_name": "com.example.bangchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934426884313-2c3hqs86dlqiskuoi558fe85onbk06jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bangchat",
+            "certificate_hash": "2a65feb2d5267c73a053d8f88ec9a30884a75491"
+          }
+        },
+        {
+          "client_id": "934426884313-i6ih2enkjjvabk06h93o983119j57hfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8X6hofMU3lTs-jANs4eOCI0IJo5w5H9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934426884313-i6ih2enkjjvabk06h93o983119j57hfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

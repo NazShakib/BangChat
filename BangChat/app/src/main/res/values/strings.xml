@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bang Chat</string>
+
+    <string name="hi">
+        <font fgcolor="#444444">Haven’t registered yet?  </font><font fgcolor="#000000">Join now</font>
+    </string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot Pass?</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue.</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="sign_up_if_you_re_new">Sign up, if you’re new!</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="todo">TODO</string>
+    <string name="string_todo" />
+    <string name="already_have_an_account">Already have an Account?</string>
+    <string name="create_account">Create Your Account</string>
+    <string name="your_name">Your Name</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/sfnsdisplay"
+            android:text="@string/hello_there"
+            android:textColor="#1C8321"
+            android:textSize="28.6sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="@string/wlcome_to_bangchat"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:fontFamily="@font/sfnsdisplay"
+        android:onClick="account"
+        android:text="Sign Up"
+        android:textColor="#1C8321" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="account"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:textColor="@color/white"
+        android:background="#1C8321"
+        android:fontFamily="@font/sfnsdisplay"
+    />
+
+
+    </LinearLayout>

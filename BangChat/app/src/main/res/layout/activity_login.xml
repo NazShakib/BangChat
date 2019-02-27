@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/sfnsdisplay"
+            android:text="Welcome"
+            android:textColor="#1C8321"
+            android:textSize="28.6sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="@string/please_sign_in_to_continue"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:autofillHints=""
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38.8dp"
+            android:autofillHints=""
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/forgot_pass"
+            android:onClick="login"
+            android:id="@+id/mainForgotPass"
+            android:textColor="#d3d3d3"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp">
+
+            <ImageView
+                android:id="@+id/mainLogin"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/circle"
+                android:onClick="login"
+                android:tint="#18881C"
+                />
+
+            <ImageView
+
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="22dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/whitearrow" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In...Please Wait.."
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:fontFamily="@font/roboto_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_if_you_re_new"
+        android:textSize="15sp"
+        android:onClick="login"
+        android:id="@+id/mainNewAccount"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"/>
+
+</RelativeLayout>
