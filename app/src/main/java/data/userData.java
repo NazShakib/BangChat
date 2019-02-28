@@ -3,17 +3,19 @@ package data;
 public class userData {
     private String name;
     private String phone;
-    private String password;
 
-    public userData(String name, String phone, String password) {
+
+    public userData ()
+    {
+
+    }
+    public userData(String name, String phone) {
         this.name = name;
         this.phone = phone;
-        this.password = password;
     }
 
-    public userData(String phone, String password) {
+    public userData(String phone) {
         this.phone = phone;
-        this.password = password;
     }
 
     public String getName() {
@@ -32,11 +34,4 @@ public class userData {
         this.phone = phone;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

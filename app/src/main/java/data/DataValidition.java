@@ -4,17 +4,14 @@ public class DataValidition {
 
     private String name;
     private String phone;
-    private String password;
 
-    public DataValidition(String name, String phone, String password) {
+    public DataValidition(String name, String phone) {
         this.name = name;
         this.phone = phone;
-        this.password = password;
-    }
 
-    public DataValidition(String phone, String password) {
-        this.phone = phone;
-        this.password = password;
+    }
+    public DataValidition() {
+
     }
 
     public boolean checkName()
@@ -30,48 +27,23 @@ public class DataValidition {
     }
     public boolean checkPhone()
     {
-        if(phone.isEmpty())
-        {
-            return false;
-        }
-        else
+        if(!phone.isEmpty() && phone.length()==11)
         {
             return true;
         }
-    }
-    private boolean checkPassword()
-    {
-        if(password.isEmpty())
-        {
-            return false;
-        }
         else
         {
-            return true;
+            return false;
         }
     }
 
-    public boolean validSignUp()
+    public boolean checkBoth()
     {
-        if(checkName() && checkPhone() && checkPassword())
+        if((!phone.isEmpty() && phone.length()==11) && !name.isEmpty())
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
-    }
-    public boolean validLogin()
-    {
-        if(checkPhone() && checkPassword())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
 }
