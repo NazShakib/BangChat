@@ -10,8 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import data.DataValidition;
 import data.userData;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         userName = findViewById(R.id.userName);
@@ -44,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                {
                    user = new userData(name,phone);
                    Intent intent = new Intent(getApplicationContext(),VerificationCode.class);
+                   intent.putExtra("phone",phone);
                    startActivity(intent);
                    print("Name: "+name+"\nPhone: "+phone);
                    print("\nButton Clicked Successfully");
@@ -68,7 +74,17 @@ public class MainActivity extends AppCompatActivity {
        });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
+        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
+        {
+            Intent intent = new Intent(MainActivity.this, AccountActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+    }
 
     private void print(Object object)
     {
